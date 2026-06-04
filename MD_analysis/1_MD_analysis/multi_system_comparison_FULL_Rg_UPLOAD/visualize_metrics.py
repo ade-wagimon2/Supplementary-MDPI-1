@@ -5,6 +5,8 @@ import seaborn as sns
 import string
 import numpy as np
 from matplotlib.patches import Patch
+import matplotlib.ticker as ticker
+
 
 # Nature-style colors
 publication_colors = {
@@ -225,6 +227,7 @@ def generate_global_summary(all_timeseries, all_rmsf):
         
         ax.set_ylabel(ylabel, fontweight='bold')
         ax.set_xlabel('Frame', fontweight='bold')
+        ax.xaxis.set_major_formatter(ticker.StrMethodFormatter('{x:,.0f}'))
         # Place panel label outside the grid with consistent positioning
         ax.annotate(string.ascii_uppercase[i], xy=(0, 1), xycoords='axes fraction',
                    xytext=(-25, 10), textcoords='offset points',

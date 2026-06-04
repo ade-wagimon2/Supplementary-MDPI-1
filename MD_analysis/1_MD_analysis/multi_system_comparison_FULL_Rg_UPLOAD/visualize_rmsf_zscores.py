@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.lines import Line2D
 from matplotlib.patches import Patch
+import matplotlib.ticker as ticker
 
 # =============================================================================
 # PLOT CONFIGURATION
@@ -70,11 +71,11 @@ def generate_rmsf_zscore_plot():
     
     # Storage for legend handles
     legend_elements = [
-        Line2D([0], [0], color='red', linestyle='--', label='Z = +2 (High Flexibility)'),
-        Line2D([0], [0], color='blue', linestyle='--', label='Z = -2 (Low Flexibility)'),
+        Line2D([0], [0], color='red', linestyle='--', label='$Z = +2$ (High Flexibility)'),
+        Line2D([0], [0], color='blue', linestyle='--', label='$Z = -2$ (Low Flexibility)'),
         Patch(facecolor='red', edgecolor='none', label='Flexible Residue'),
         Patch(facecolor='grey', edgecolor='none', label='Normal Range'),
-        Line2D([0], [0], color='black', linestyle='-', linewidth=1.0, label='Z = 0 (Baseline)')
+        Line2D([0], [0], color='black', linestyle='-', linewidth=1.0, label='$Z = 0$ (Baseline)')
     ]
 
     for i, system in enumerate(SYSTEMS):
@@ -99,6 +100,7 @@ def generate_rmsf_zscore_plot():
         ax.axhline(0, color='black', linestyle='-', linewidth=1.0, zorder=1)
         ax.axhline(2, color='red', linestyle='--', linewidth=1.5, zorder=2)
         ax.axhline(-2, color='blue', linestyle='--', linewidth=1.5, zorder=2)
+        ax.yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, p: f"${x:,.0f}$"))
         
         # Formatting
         ax.set_title(f"{system}", fontweight='bold')
@@ -111,7 +113,7 @@ def generate_rmsf_zscore_plot():
             ax.set_xlabel("Residue Number", fontweight='bold')
 
     # Add shared legend at the bottom
-    fig.legend(handles=legend_elements, loc='lower center', bbox_to_anchor=(0.5, -0.04), 
+    fig.legend(handles=legend_elements, loc='lower center', bbox_to_anchor=(0.55, -0.06), 
                ncol=3, frameon=True, fontsize=12)
 
     # Save
