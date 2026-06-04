@@ -1,0 +1,33 @@
+# PyMOL Hydrophobicity Visualization Script
+# Generated for: 3W7F_A.pdb
+# Hydrophobicity scale: Kyte-Doolittle
+
+reinitialize
+
+load ../../3W7F_A.pdb, 3W7F_A
+
+# Base visualization
+hide all
+show cartoon, 3W7F_A
+color gray80, 3W7F_A
+
+# Color by hydrophobicity (blue = hydrophilic, red = hydrophobic)
+
+# Hydrophilic residues (59 residues)
+select hydrophilic, 3W7F_A and resi 6+9+18+19+20+31+32+33+34+52+54+56+57+58+59+60+61+73+74+75+78+79+84+95+96+97+98+99+110+113+114+115+120+121+150+151+152+153+175+176+177+178+179+181+191+192+221+235+236+237+256+257+258+259+261+262+267+268+269
+color marine, hydrophilic
+
+# Neutral residues (200 residues)
+select neutral, 3W7F_A and resi 1+2+3+4+5+7+8+10+11+12+13+14+15+16+17+21+22+23+24+25+26+27+28+29+30+35+36+37+38+39+42+43+44+45+46+47+48+49+50+51+55+62+63+64+65+66+67+68+69+70+71+72+76+80+81+82+83+85+86+87+88+89+90+91+92+94+100+101+102+103+104+105+106+107+108+109+111+112+116+117+118+119+122+123+124+125+126+127+128+129+130+131+132+133+134+135+145+146+147+149+154+155+156+157+158+159+161+162+163+164+165+167+168+169+170+171+172+173+174+180+182+183+184+185+186+187+188+189+190+193+194+195+196+197+202+203+204+205+206+207+208+209+210+211+212+213+214+215+216+217+218+219+220+222+223+224+225+226+227+228+229+230+231+232+233+234+238+239+240+241+242+245+246+247+248+249+250+251+252+253+254+255+260+263+264+265+266+270+271+272+273+274+275+276+277+278+279+280+283+284
+color white, neutral
+
+# Hydrophobic residues (17 residues)
+select hydrophobic, 3W7F_A and resi 40+41+93+136+137+138+139+140+141+142+143+144+148+160+166+243+244
+color firebrick, hydrophobic
+show sticks, hydrophobic
+
+# Final settings
+deselect
+orient
+zoom vis
+bg_color white

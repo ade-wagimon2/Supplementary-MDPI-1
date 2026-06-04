@@ -1,0 +1,30 @@
+# ChimeraX Hydrophobic Regions Visualization Script
+# Generated for: 3W7F_A.pdb
+
+close all
+
+open ../../3W7F_A.pdb
+
+# Base visualization
+hide atoms
+show cartoons
+color gray target c
+
+# Highlight 2 hydrophobic regions
+
+# Region 1: residues 133-148 (mean hydro: 1.29)
+name hydro_region_1 :133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148
+color hydro_region_1 red target c
+surface hydro_region_1
+transparency hydro_region_1 50 target s
+
+# Region 2: residues 159-166 (mean hydro: 0.75)
+name hydro_region_2 :159,160,161,162,163,164,165,166
+color hydro_region_2 orange target c
+surface hydro_region_2
+transparency hydro_region_2 50 target s
+
+# Final settings
+view
+set bgColor white
+lighting soft

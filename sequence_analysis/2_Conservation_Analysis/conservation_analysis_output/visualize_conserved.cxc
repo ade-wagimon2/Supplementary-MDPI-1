@@ -1,0 +1,42 @@
+# ChimeraX Visualization Script
+# Generated for: 3W7F_A.pdb
+# Auto-generated - do not edit manually
+
+# Close all models
+close all
+
+# Load structure
+open ../3W7F_A.pdb
+
+# Set visualization style
+hide atoms
+show cartoons
+color gray target c
+
+# Create selections and color residue groups
+
+# conserved_same (20 residues)
+name conserved_same :41,45,48,52,114,129,134,138,160,161,163,165,168,171,172,176,181,183,185,248
+color conserved_same green target c
+show conserved_same atoms
+style conserved_same stick
+
+# unique_psy (5 residues)
+name unique_psy :34,157,229,233,265
+color unique_psy dodger blue target c
+show unique_psy atoms
+style unique_psy stick
+
+# unique_crtm (43 residues)
+name unique_crtm :11,19,22,25,26,29,30,36,37,39,43,44,49,65,87,89,90,104,110,111,131,133,137,140,141,143,164,167,169,170,174,175,208,212,213,216,219,223,251,252,256,260,268
+color unique_crtm salmon target c
+show unique_crtm atoms
+style unique_crtm stick
+
+# Final view settings
+view
+set bgColor white
+lighting soft
+
+# Save session (optional)
+# save visualize_conserved.cxs
