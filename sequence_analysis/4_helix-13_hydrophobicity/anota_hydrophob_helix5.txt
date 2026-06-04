@@ -1,18 +1,18 @@
 DATASET_EXTERNALSHAPE
 SEPARATOR COMMA
 
-DATASET_LABEL,Hydrophobicity_helix12
+DATASET_LABEL,Hydrophobicity_helix13
 COLOR,#B2713D
 
 # Use a triangle shape for Hydrophobicity_helix13
 SHAPE_TYPE,4
 
 # Field labels (only one field for this dataset)
-FIELD_LABELS,Hydrophobicity_helix12
+FIELD_LABELS,Hydrophobicity_helix13
 FIELD_COLORS,#B2713D
 
 # Legend settings
-LEGEND_TITLE,Hydrophobicity_helix12
+LEGEND_TITLE,Hydrophobicity_helix13
 LEGEND_SHAPES,4
 LEGEND_COLORS,#B2713D
 LEGEND_LABELS,Hydrophobic
