@@ -57,24 +57,11 @@ The analyses and modeling pipelines in this repository rely on several standard 
 * **Sequence Analysis:** [e.g., Clustal Omega, MUSCLE, MEGA, Biopython]
 * **Data Processing & Plotting:** Python 3.9+ (with `pandas`, `matplotlib`, `seaborn`, `scipy`).
 
-*Note: Specific environment setups (e.g., `environment.yml` or `requirements.txt`) are provided in the respective sub-directories where custom scripts are located.*
-
 ---
 
 ## 📖 Citation
 
 > **[Author 1], [Author 2], et al.** (2026). *Comparative Structural Modeling Suggests Distinct Signatures of Conformational Plasticity and Surface Physicochemistry in Phytoene Synthase and Dehydrosqualene Synthase*. **[Journal Name]**, **[Volume]([Issue])**, [Page range].
 > DOI: [Insert DOI here]
-
----
-
-## 🤝 Contributing & Issues
-
-While this repository primarily serves as a static data archive for the published manuscript, we welcome corrections or questions regarding the analysis scripts.
-
-* If you find a bug in a script, please open an [Issue](../../issues).
-* For questions regarding the biological findings, please contact the corresponding author.
-
----
 
 ---
