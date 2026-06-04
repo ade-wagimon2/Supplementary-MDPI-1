@@ -77,7 +77,7 @@ pip install numpy pandas matplotlib seaborn scipy tqdm jupyter mdaencore
 Depending on which stage of the pipeline you run, you may need:
 
 * **MD Trajectory Processing**: [AmberTools (CPPTRAJ)](https://ambermd.org/)
-* **Sequence Processing & Alignment**: [Clustal Omega](https://www.ebi.ac.uk/Tools/msa/clustalo/), [trimAl](http://trimal.cgenomics.org/), [USEARCH](https://www.drive5.com/usearch/)
+* **Sequence Processing & Alignment**: [Clustal Omega](https://www.ebi.ac.uk/Tools/msa/clustalo/), [trimAl](http://trimal.cgenomics.org/), [uclust](https://github.com/gcybis/Uclust)
 * **Phylogenetics**: [IQ-TREE](http://www.iqtree.org/)
 * **Molecular Visualization**: [PyMOL](https://pymol.org/), [UCSF ChimeraX](https://www.cgl.ucsf.edu/chimerax/)
 
