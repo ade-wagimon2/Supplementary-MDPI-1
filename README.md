@@ -29,14 +29,14 @@ Contains the scripts, curated datasets, and standard operating procedures (SOP) 
 
 * **`1_sequence_preparation/`**: Implements the sequence processing pipeline (SOP) including retrieval from the KEGG database, EC number purification, duplicate removal, N-terminal signal peptide trimming, length filtration (250–500 aa), sequence clustering (at 95% identity using USEARCH), outlier detection (using R `odseq`), and Maximum Likelihood tree construction using IQ-TREE (`Q.PFAM+R8` substitution model).
 * **`2_Conservation_Analysis/`**: Contains python scripts (`conserved_analysis.py`, `structure_mapper.py`) and outputs measuring sequence-level conservation, shared amino acids, and mapping them directly to ChimeraX (`.cxc`) and PyMOL (`.pml`) visualization scripts.
-* **`3_hyrophobicity/`**: Conducts multi-scale hydropathy profiling using 7 standard scales (Kyte-Doolittle, Hopp-Woods, Eisenberg, Rose, Janin, Engelman (GES), and Cowan-Whittaker) and random subsampling to handle class imbalances, generating 3D mappings.
+* **`3_hyrophobicity/`**: Conducts multi-scale hydropathy profiling using 7 standard scales (Kyte-Doolittle, Hopp-Woods, Eisenberg, Rose, Janin, Engelman (GES), and Cowan-Whittaker) and random subsampling, generating 3D mappings.
 * **`4_helix-13_hydrophobicity/`**: Focuses specifically on the hydrophobicity calculations of helical regions (Helix 13) including alignment files (`.fasta`), trees (`.tre`), annotation files, and calculations in Jupyter (`hidrophob_calculation.ipynb`).
 
 ### 🧱 `input_structure/`
 
 Contains the 3D structural coordinates and topological configurations prior to MD simulations.
 
-* **Reference PDBs**: Crystal structures and homology models, including `2ZCO.pdb`, `3AE0_A.pdb`, `3W7F_A.pdb`, and `5IYS.pdb`.
+* **Reference PDBs**: Crystal structures and OpenFold3 models, including `2ZCO.pdb`, `3AE0_A.pdb`, `3W7F_A.pdb`, and `5IYS.pdb`.
 * **System Coordinates**: Starting structures for simulations, such as `CRTB_COMPLEX_FSPP_seed_42` and `CRTB_COMPLEX_GGPP_seed_42`.
 
 ### ⚛️ `MD_analysis/`
@@ -82,10 +82,3 @@ Depending on which stage of the pipeline you run, you may need:
 * **Molecular Visualization**: [PyMOL](https://pymol.org/), [UCSF ChimeraX](https://www.cgl.ucsf.edu/chimerax/)
 
 ---
-
-## 📖 Citation
-
-If you use the scripts, dataset, or structural models in your research, please cite our study:
-
-> **[Author 1], [Author 2], et al.** (2026). *Comparative Structural Modeling Suggests Distinct Signatures of Conformational Plasticity and Surface Physicochemistry in Phytoene Synthase and Dehydrosqualene Synthase*. **[Journal Name]**, **[Volume]([Issue])**, [Page range].
-> DOI: [Insert DOI here]
