@@ -44,7 +44,7 @@ Contains simulation outputs, convergence verification, and custom scripts to par
 
 * **`1_MD_analysis/`**: Contains time-series datasets of Root Mean Square Deviation (RMSD), Root Mean Square Fluctuation (RMSF), and Radius of Gyration (Rg) across the independent MD replicas (MD1, MD2, MD3) for each system. Includes scripts for metric aggregation (`calculate_basic_metrics.py`, `visualize_metrics.py`, `visualize_rmsf_zscores.py`).
 * **`2_Convergence/`**: Evaluates trajectory sampling convergence using **Clustering Ensemble Similarity (CES)** analysis and Jensen-Shannon Divergence (JSD) implemented via `MDAnalysis` and `mdaencore` (`Convergence_analysis.ipynb`).
-* **`3_Interactions/`**: Quantifies and compares protein-ligand interaction fingerprints (PLIF) across systems (e.g., Hydrophobic, Hydrogen Bonds, Anionic, VdW contacts) using **ProLIF** and generates Nature-style comparative figures (`Full_interactions.ipynb` and `interaction_analysis_restyle.py`).
+* **`3_Interactions/`**: Quantifies and compares protein-ligand interaction fingerprints (PLIF) across systems (e.g., Hydrophobic, Hydrogen Bonds, Anionic, VdW contacts) using **ProLIF** and generates comparative figures (`Full_interactions.ipynb` and `interaction_analysis_restyle.py`).
 
 ### 📊 `figures/`
 
