@@ -5,7 +5,7 @@
 [![Data Analysis](https://img.shields.io/badge/Analysis-ProLIF%20%7C%20MDAnalysis-green.svg)](https://github.com/chemosim-lab/ProLIF)
 [![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 
-This repository serves as the official supplementary data and analysis archive for the study: **"Comparative Structural Modeling Suggests Distinct Signatures of Conformational Plasticity and Surface Physicochemistry in Phytoene Synthase and Dehydrosqualene Synthase."**
+This repository serves as the supplementary data and analysis archive for the study: **"Comparative Structural Modeling Suggests Distinct Signatures of Conformational Plasticity and Surface Physicochemistry in Phytoene Synthase and Dehydrosqualene Synthase."**
 
 Phytoene Synthase (**PSY**) and Dehydrosqualene Synthase (**CrtM**) are crucial enzymes in the isoprenoid and carotenoid biosynthesis pathways. This study investigates their structural dynamics, highlighting the distinct evolutionary signatures of conformational plasticity and surface physicochemistry that differentiate their catalytic mechanisms and substrate specificities.
 
