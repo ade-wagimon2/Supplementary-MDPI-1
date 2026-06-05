@@ -3,7 +3,6 @@
 [![Bioinformatics](https://img.shields.io/badge/Domain-Bioinformatics-blue.svg)](https://en.wikipedia.org/wiki/Bioinformatics)
 [![Molecular Dynamics](https://img.shields.io/badge/Simulations-Amber%20MD-orange.svg)](https://ambermd.org/)
 [![Data Analysis](https://img.shields.io/badge/Analysis-ProLIF%20%7C%20MDAnalysis-green.svg)](https://github.com/chemosim-lab/ProLIF)
-[![License](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
 
 This repository serves as the supplementary data and analysis archive for the study: **"Comparative Structural Modeling Suggests Distinct Signatures of Conformational Plasticity and Surface Physicochemistry in Phytoene Synthase and Dehydrosqualene Synthase."**
 
