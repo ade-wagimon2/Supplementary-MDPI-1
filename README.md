@@ -17,7 +17,7 @@ The codebase is organized into four main functional directories corresponding to
 ```
 repository/
 ├── 🧬 sequence_analysis/           # Bioinformatics, alignments, and conservation analysis
-├── 🧱 input_structure/             # Prepared 3D structural models and simulation topologies
+├── 🧱 input_structure/             # Prepared 3D structural models
 ├── ⚛️ MD_analysis/                  # MD trajectory metrics, convergence, and interaction fingerprints
 └── 📊 figures/                      # High-resolution publication figures and supplemental data
 ```
